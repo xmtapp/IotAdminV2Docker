@@ -22,5 +22,5 @@ RUN apt update
 RUN apt install -y certbot python-certbot-nginx php7.1 php7.1-cli php7.1-fpm php7.1-gd php7.1-json php7.1-mysql php7.1-readline php7.1-xml php7.1-mbstring php7.1-curl php7.1-zip php7.1-bcmath composer supervisor nginx redis-server npm memcached expect
 
 
-
-
+# 清理apt缓存
+RUN apt-get clean
